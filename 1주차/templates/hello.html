@@ -1,0 +1,29 @@
+<HTML>
+    <HEAD>
+        <TITLE> Hello {{ name }}!</TITLE>
+    </HEAD>
+    <BODY>
+        Hello {{ name }}!
+        Good Morning {{ name }}!
+        Hello {{ name }}!
+        <h1>
+            error {{ error }}!
+        </h1>
+
+
+        <form action = "http://127.0.0.1:5000/hello/" method = "post">
+            <p>Enter Name:</p>
+            <p><input type = "text" id = "username" /></p>
+            <p><input type = "text" id = "email" /></p>
+            <p><input type = "submit" value = "submit" /></p>
+         </form>
+
+         {% if username == ddd %}
+         Hello {{ name }}!
+         {% endif %}
+
+         {% for User in Users %}
+         Hello {{ User }}!
+         {% endfor %}
+    </BODY>
+</HTML>
